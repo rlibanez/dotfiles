@@ -1,0 +1,12 @@
+[submodule "/home/roberto/.config/zsh/plugins/zsh-completions"]
+	path = /home/roberto/.config/zsh/plugins/zsh-completions
+	url = https://github.com/zsh-users/zsh-completions.git
+[submodule "/home/roberto/.config/zsh/plugins/powerlevel10k"]
+	path = /home/roberto/.config/zsh/plugins/powerlevel10k
+	url = https://github.com/romkatv/powerlevel10k.git
+[submodule "/home/roberto/.config/zsh/plugins/zsh-autosuggestions"]
+	path = /home/roberto/.config/zsh/plugins/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions.git
+[submodule "/home/roberto/.config/zsh/plugins/zsh-syntax-highlighting"]
+	path = /home/roberto/.config/zsh/plugins/zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting.git

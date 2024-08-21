@@ -11,3 +11,9 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 alias dotfiles='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
+
+# zsh plugins
+fpath=(~/.config/zsh/plugins/zsh-completions/src $fpath)
+source ~/.config/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.config/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.config/zsh/plugins/powerlevel10k/powerlevel10k.zsh-theme
