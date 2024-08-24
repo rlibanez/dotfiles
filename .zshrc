@@ -10,6 +10,7 @@ HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
 setopt hist_ignore_space
+setopt hist_ignore_all_dups
 setopt sharehistory
 setopt appendhistory
 bindkey -e
@@ -38,6 +39,11 @@ function space() {
     local num="${1:-10}"  # Si no se proporciona el primer argumento, usa 10 como valor predeterminado
     local dir="${2:-.}"  # Si no se proporciona el segundo argumento, usa el directorio actual (".")
     sudo du -hd 1 "$dir" 2>/dev/null | sort -rh | head -n "$num"
+}
+
+function initssh() {
+    eval "$(ssh-agent -s)"
+    ssh-add ~/.ssh/github_rlibanez
 }
 
 # The following lines were added by compinstall
